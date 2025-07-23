@@ -47,11 +47,11 @@ Common object data fields supported by Rokt Event API:
 - `country` - Country code
 - `postcode` - Postal/ZIP code
 
-For the complete list of supported fields, refer to the [Rokt Event API Documentation](https://docs.rokt.com/developers/api-reference/event-api/#objectdata-fields).
+For the complete list of supported fields, refer to the [Rokt Event API Documentation](https://docs.rokt.com/developers/api-reference/event-api).
 
 ## License
 
-This project is licensed under the Apache 2.0 License - see the [LICENSE](/license) file for details.
+This project is licensed under the Apache 2.0 License - see the [LICENSE](license) file for details.
 
 ## Author
 
