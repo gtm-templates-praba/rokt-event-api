@@ -1,5 +1,7 @@
 homepage: 'https://prabapro.me/'
 documentation: 'https://github.com/gtm-templates-praba/rokt-event-api'
 versions:
+  - sha: 55e65bd3c391690613864780a13ebea7e547a22b
+    changeNotes: Added unit tests.
   - sha: 63a64e7fb8c5c0ed4523e6948da1a3810959b39b
     changeNotes: Initial release.
