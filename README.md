@@ -11,8 +11,6 @@ An unofficial Server-side Google Tag Manager template for sending conversion eve
 ## API Endpoint
 
 - URL: `https://api.rokt.com/v2/events`
-- Method: `POST`
-- Content-Type: `application/json`
 - Rokt-Version: `2020-05-21`
 
 ## Configuration
@@ -28,11 +26,11 @@ An unofficial Server-side Google Tag Manager template for sending conversion eve
 
 ### Optional Fields
 
-| Field                | Description                           | Example                                       |
-| -------------------- | ------------------------------------- | --------------------------------------------- |
-| **Rokt Tracking ID** | Rokt-generated conversion tracking ID | From `passbackconversiontrackingid` parameter |
-| **Object Data**      | Additional event parameters           | `email`, `amount`, `currency`                 |
-| **Metadata**         | Non-business critical information     | `source`, `campaign`                          |
+| Field                | Description                       | Example                       |
+| -------------------- | --------------------------------- | ----------------------------- |
+| **Rokt Tracking ID** | Rokt Click ID (`rtid`)            | `?rtid=218e259f29e7...`       |
+| **Object Data**      | Additional event parameters       | `email`, `amount`, `currency` |
+| **Metadata**         | Non-business critical information | `source`, `campaign`          |
 
 ### Object Data Fields
 
