@@ -51,7 +51,7 @@ For the complete list of supported fields, refer to the [Rokt Event API Document
 
 ## License
 
-This project is licensed under the Apache 2.0 License - see the [LICENSE](license) file for details.
+This project is licensed under the Apache 2.0 License - see the [LICENSE](https://github.com/gtm-templates-praba/rokt-event-api/blob/main/LICENSE) file for details.
 
 ## Author
 
