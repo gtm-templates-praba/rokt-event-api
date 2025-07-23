@@ -1,6 +1,6 @@
-/********************************************
+/*****************************************************
  * 1. Missing Account ID - Should Fail
- */
+ *****************************************************/
 const mockData = {
   // accountId missing
   rpub: 'rpub-1234-5678',
@@ -14,9 +14,9 @@ runCode(mockData);
 assertApi('gtmOnFailure').wasCalled();
 assertApi('gtmOnSuccess').wasNotCalled();
 
-/********************************************
+/*****************************************************
  * 2. Empty Account ID - Should Fail
- ********************************************/
+ *****************************************************/
 const mockData = {
   accountId: '',
   rpub: 'rpub-1234-5678',
@@ -30,9 +30,9 @@ runCode(mockData);
 assertApi('gtmOnFailure').wasCalled();
 assertApi('gtmOnSuccess').wasNotCalled();
 
-/********************************************
+/*****************************************************
  * 3. Invalid Rokt Public Key Format - Should Fail
- ********************************************/
+ *****************************************************/
 const mockData = {
   accountId: 'test-account-123',
   rpub: 'invalid-key-format',
@@ -46,9 +46,9 @@ runCode(mockData);
 assertApi('gtmOnFailure').wasCalled();
 assertApi('gtmOnSuccess').wasNotCalled();
 
-/********************************************
+/*****************************************************
  * 4. Missing Rokt Public Key - Should Fail
- ********************************************/
+ *****************************************************/
 const mockData = {
   accountId: 'test-account-123',
   // rpub missing
@@ -62,9 +62,9 @@ runCode(mockData);
 assertApi('gtmOnFailure').wasCalled();
 assertApi('gtmOnSuccess').wasNotCalled();
 
-/********************************************
+/*****************************************************
  * 5. Invalid Rokt Secret Key Format - Should Fail
- ********************************************/
+ *****************************************************/
 const mockData = {
   accountId: 'test-account-123',
   rpub: 'rpub-1234-5678',
@@ -78,9 +78,9 @@ runCode(mockData);
 assertApi('gtmOnFailure').wasCalled();
 assertApi('gtmOnSuccess').wasNotCalled();
 
-/********************************************
+/*****************************************************
  * 6. Missing Rokt Secret Key - Should Fail
- ********************************************/
+ *****************************************************/
 const mockData = {
   accountId: 'test-account-123',
   rpub: 'rpub-1234-5678',
@@ -94,9 +94,9 @@ runCode(mockData);
 assertApi('gtmOnFailure').wasCalled();
 assertApi('gtmOnSuccess').wasNotCalled();
 
-/********************************************
+/*****************************************************
  * 7. Missing Event Type - Should Fail
- ********************************************/
+ *****************************************************/
 const mockData = {
   accountId: 'test-account-123',
   rpub: 'rpub-1234-5678',
@@ -110,9 +110,9 @@ runCode(mockData);
 assertApi('gtmOnFailure').wasCalled();
 assertApi('gtmOnSuccess').wasNotCalled();
 
-/********************************************
+/*****************************************************
  * 8. Empty Event Type - Should Fail
- ********************************************/
+ *****************************************************/
 const mockData = {
   accountId: 'test-account-123',
   rpub: 'rpub-1234-5678',
@@ -126,9 +126,9 @@ runCode(mockData);
 assertApi('gtmOnFailure').wasCalled();
 assertApi('gtmOnSuccess').wasNotCalled();
 
-/********************************************
+/*****************************************************
  * 9. Valid Parameters with Optional Fields
- ********************************************/
+ *****************************************************/
 const mockData = {
   accountId: 'test-account-123',
   rpub: 'rpub-1234-5678',
@@ -165,9 +165,9 @@ runCode(mockData);
 assertApi('gtmOnSuccess').wasCalled();
 assertApi('gtmOnFailure').wasNotCalled();
 
-/********************************************
+/*****************************************************
  * 10. Valid Parameters - All Required Fields Present
- ********************************************/
+ *****************************************************/
 // Test with all valid required parameters
 const mockData = {
   accountId: 'test-account-123',
@@ -198,9 +198,9 @@ runCode(mockData);
 assertApi('gtmOnSuccess').wasCalled();
 assertApi('gtmOnFailure').wasNotCalled();
 
-/********************************************
+/*****************************************************
  * 11. Rokt Reserved Prefix Filter Test
- ********************************************/
+ *****************************************************/
 const mockData = {
   accountId: 'test-account-123',
   rpub: 'rpub-1234-5678',
